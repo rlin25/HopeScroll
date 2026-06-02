@@ -1,0 +1,75 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #08080f;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: min(540px, 90vw);
+  padding: 40px 24px;
+}
+
+.prompt-label {
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #404060;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+textarea {
+  width: 100%;
+  height: 44vh;
+  min-height: 180px;
+  background: #0d0d18;
+  border: 1px solid #1a1a2e;
+  border-left: 2px solid #f0c04028;
+  color: #c0c0d0;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 20px 22px;
+  resize: none;
+  outline: none;
+  transition: border-left-color 0.2s;
+}
+
+textarea:focus {
+  border-left-color: #f0c040;
+}
+
+textarea::placeholder {
+  color: #1e1e38;
+  font-style: italic;
+}
+
+#see-lemon {
+  align-self: stretch;
+  background: #f0c040;
+  color: #08080f;
+  border: none;
+  padding: 14px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.2s;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+#see-lemon:not(:disabled) { opacity: 1; }
+#see-lemon:hover:not(:disabled) { background: #ffffff; }
+#see-lemon:disabled { pointer-events: none; }

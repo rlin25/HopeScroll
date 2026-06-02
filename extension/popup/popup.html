@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HopeScroll</h1>
+
+    <div class="status-section">
+      <div id="session-status" class="status-badge">Loading...</div>
+      <button id="open-journal" class="btn-primary" style="display:none">OPEN JOURNAL</button>
+    </div>
+
+    <div class="stats">
+      <span id="total-sessions">0 sessions</span>
+      <span id="streak"></span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="settings-section">
+      <h2>Anthropic API Key</h2>
+      <div id="key-saved-notice" class="key-notice" style="display:none"></div>
+      <input type="password" id="api-key" placeholder="sk-ant-...">
+      <div class="btn-row">
+        <button id="save-key" class="btn-secondary">SAVE KEY</button>
+        <span id="key-status" class="key-status"></span>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h2>YouTube API Key</h2>
+      <div id="yt-key-saved-notice" class="key-notice" style="display:none"></div>
+      <input type="password" id="yt-api-key" placeholder="AIza...">
+      <div class="btn-row">
+        <button id="save-yt-key" class="btn-secondary">SAVE KEY</button>
+        <span id="yt-key-status" class="key-status"></span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

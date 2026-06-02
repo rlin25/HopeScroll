@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="intention.css">
+</head>
+<body>
+  <div id="step-0" class="step active">
+    <div class="prompt-label">I'LL WATCH</div>
+    <div class="count-row">
+      <button class="count-btn" id="count-dec">◀</button>
+      <input type="number" id="short-count" value="5" min="1" max="99">
+      <button class="count-btn" id="count-inc">▶</button>
+    </div>
+    <div class="prompt-label">SHORTS</div>
+    <button id="lock-in">LOCK IN</button>
+  </div>
+
+  <div id="step-1" class="step">
+    <div class="prompt-label">I WANT TO FEEL</div>
+    <div class="selected-display" id="selected-1">—</div>
+    <div class="spectrum" id="spectrum-1">
+      <div class="axis-label top">ACTIVATED</div>
+      <div class="axis-label bottom">DEACTIVATED</div>
+      <div class="axis-label left">UNPLEASANT</div>
+      <div class="axis-label right">PLEASANT</div>
+      <div class="crosshair-h"></div>
+      <div class="crosshair-v"></div>
+      <div class="cursor" id="cursor-1"></div>
+    </div>
+    <button id="begin-session" disabled>BEGIN SESSION</button>
+  </div>
+
+  <script src="../storage.js"></script>
+  <script src="intention.js"></script>
+</body>
+</html>

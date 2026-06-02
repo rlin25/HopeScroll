@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="lemon.css">
+</head>
+<body>
+  <div id="lemon-reveal">
+    <div class="container">
+
+      <div id="ascii-art" class="ascii-container"></div>
+      <p id="state-label" class="state-label"></p>
+
+      <blockquote id="narrative-summary" class="narrative"></blockquote>
+
+      <div class="emotion-journey">
+        <h3>YOUR EMOTIONAL JOURNEY</h3>
+        <div class="journey-map" id="journey-map">
+          <div class="axis-label top">ACTIVATED</div>
+          <div class="axis-label bottom">DEACTIVATED</div>
+          <div class="axis-label left">UNPLEASANT</div>
+          <div class="axis-label right">PLEASANT</div>
+          <div class="crosshair-h"></div>
+          <div class="crosshair-v"></div>
+          <svg id="journey-svg" class="journey-svg"></svg>
+          <div id="dot-before" class="journey-dot before" title="Before"></div>
+          <div id="dot-after"  class="journey-dot after"  title="After"></div>
+          <div id="label-before" class="journey-dot-label before-label"></div>
+          <div id="label-after"  class="journey-dot-label after-label"></div>
+        </div>
+      </div>
+
+      <div id="content-analysis" class="content-analysis" style="display:none">
+        <h3>CONTENT CONSUMED</h3>
+        <div class="content-stats">
+          <span id="videos-count"></span>
+          <span id="dominant-badge" class="dominant-badge"></span>
+        </div>
+        <div id="sentiment-breakdown" class="sentiment-breakdown"></div>
+        <p id="content-vs-experience" class="content-insight"></p>
+      </div>
+
+      <p id="observation-question" class="observation"></p>
+
+      <button id="done">DONE</button>
+    </div>
+  </div>
+  <script src="../storage.js"></script>
+  <script src="lemon.js"></script>
+</body>
+</html>

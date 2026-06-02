@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  width: 280px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+h1 {
+  font-size: 18px;
+  color: #f0c040;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 11px;
+  color: #606060;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.status-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.status-badge {
+  background: #16213e;
+  color: #808080;
+  padding: 8px 12px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.status-badge.active {
+  color: #f0c040;
+  border: 1px solid #f0c04033;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #505050;
+}
+
+.stats #streak {
+  color: #f0c040;
+}
+
+.divider {
+  height: 1px;
+  background: #252540;
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.key-notice {
+  font-size: 11px;
+  color: #4caf7d;
+  background: #1a2e1a;
+  padding: 4px 8px;
+}
+
+input[type="password"] {
+  background: #16213e;
+  border: 1px solid #252540;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+
+input[type="password"]:focus {
+  border-color: #f0c040;
+}
+
+.btn-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: #f0c040;
+  color: #1a1a2e;
+  border: none;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 1px;
+  transition: background 0.15s;
+}
+
+.btn-primary:hover { background: #ffffff; }
+
+.btn-secondary {
+  background: transparent;
+  color: #f0c040;
+  border: 1px solid #f0c040;
+  padding: 6px 12px;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.15s;
+}
+
+.btn-secondary:hover { background: #f0c04015; }
+
+.key-status {
+  font-size: 11px;
+  color: #4caf7d;
+}
+
+.key-status.error { color: #e57373; }
