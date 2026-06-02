@@ -30,7 +30,7 @@ Your guide through all of it: **the lemon** — a brutalist ASCII mascot that tr
 │                                                             │
 │  "I'll watch  5  shorts."                                   │
 │                                                             │
-│  "I WANT TO FEEL ___"  →  2D valence/arousal spectrum      │
+│  "I WANT TO FEEL ___"  →  2D valence/arousal spectrum       │
 │                            click your intended emotion      │
 └─────────────────────────────────────────────────────────────┘
                            ↓ scroll YouTube Shorts
