@@ -203,4 +203,4 @@ Open `feed-sim/index.html` in Chrome for a standalone demo of an accelerating al
 
 ---
 
-*Built at [Hackathon] · 2026*
+*Built at [Build for Humans Hackathon - #NYTechWeek] · 2026*
